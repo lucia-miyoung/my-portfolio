@@ -15,7 +15,7 @@
     <!-- font-family: 'Open Sans Condensed', sans-serif; -->
     <!-- font-family: 'Open Sans', sans-serif; -->
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <nav id="navbar">
@@ -29,79 +29,163 @@
         </ul>
       </div>
     </nav>
-    <section class="section__wrapper">
-      <section class="home" id="section">
-        <div class="home__image"></div>
-        <div class="home__detail">
-          <span class="home__title">JUN<a>G.MI.YO</a>UNG</span>
-          <span class="home__description"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id
-            nesciunt minus et assumenda modi illum
-          </span>
-          <img class="home__icon" src="images/safari.png" alt="" />
-        </div>
-      </section>
-      <section class="about" id="section">
-        <div class="about__wrapper">
-          <span class="about__title">About</span>
-          <div class="about__image">
-            <div class="about__description">
-              <span class="about__smalltalk">Hello this is miyoung</span>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
-                Voluptatum obcaecati velit, qui dolore odio ratione nam animi
-                magnam illum <br />sed explicabo nulla tenetur eveniet quia
-                architecto nostrum odit tempora iure.
-              </p>
-            </div>
-            <div class="about__avatar">
-              <img src="./images/black-profile-2.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="skills" id="section">
-        <div class="skills__wrapper">
-          <span class="skills__title">SKILLS</span>
-          <ul>
-            <li class="skill">HTML</li>
-            <li class="skill">CSS</li>
-            <li class="skill">JAVASCRIPT</li>
-            <li class="skill">REACT</li>
-            <li class="skill">NODEJS</li>
-            <li class="skill">JAVA</li>
-            <li class="skill">C</li>
-            <li class="skill">PYTHON</li>
-          </ul>
-          <span class="skills__footer"> Put yourself on view. </span>
-        </div>
-      </section>
-      <section class="works" id="section">
-        <span class="projects__title">PROJECT</span>
-        <div class="projects__wrapper">
-          <div class="projects">
-            <img src="./images/preview.jpg" alt="" />
-            <span class="projects__description"></span>
-          </div>
-          <div class="projects">
-            <img src="./images/preview.jpg" alt="" />
-            <span class="projects__description"></span>
-          </div>
-          <div class="projects">
-            <img src="./images/preview.jpg" alt="" />
-            <span class="projects__description"></span>
-          </div>
-        </div>
-      </section>
-      <section class="contact" id="section">
-        <span class="contact__title">CONTACT</span>
-        <div class="contact__detail">
-          <i class="fas fa-comment-dots"></i>
-          <p>For more MIYOUNG, why don't you contact here.</p>
-          <span class="contact__email"> myjung93a@gmail.com </span>
-          <span class="contact__phone"> 010-3956-8377 </span>
-        </div>
-      </section>
+    <!-- <section class="section__wrapper"> -->
+    <section class="home" id="section">
+      <div class="home__image">
+        <img src="images/profile.jpg" alt="" />
+      </div>
+      <div class="home__detail">
+        <span class="home__title">JUN<a>G.MI.YO</a>UNG</span>
+        <span class="home__description"
+          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam id
+          nesciunt minus et assumenda modi illum
+        </span>
+        <img class="home__icon" src="images/flower.png" alt="" />
+      </div>
     </section>
+    <section class="about" id="section">
+      <div class="about__wrapper">
+        <span class="about__title">About</span>
+        <div class="about__image">
+          <div class="about__description">
+            <span class="about__smalltalk">Hello this is miyoung</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Voluptatum obcaecati velit, qui dolore odio ratione nam animi
+              magnam illum <br />sed explicabo nulla tenetur eveniet quia
+              architecto nostrum odit tempora iure.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Voluptatum obcaecati velit, qui dolore odio ratione nam animi
+              magnam illum <br />sed explicabo nulla tenetur eveniet quia
+              architecto nostrum odit tempora iure.
+            </p>
+            <span class="about__smalltalk">Hello this is miyoung</span>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+              Voluptatum obcaecati velit, qui dolore odio ratione nam animi
+              magnam illum <br />sed explicabo nulla tenetur eveniet quia
+              architecto nostrum odit tempora iure.
+            </p>
+          </div>
+          <div class="about__avatar">
+            <img src="./images/avatar-original.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="section">
+      <div class="skills__wrapper">
+        <span class="skills__title">SKILLS</span>
+        <ul class="skills__list">
+          <li class="skill">
+            <div class="skill__img"><i class="fab fa-html5"></i></div>
+            <span>95%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">HTML</h2>
+          </li>
+          <li class="skill">
+            <div class="skill__img"><i class="fab fa-css3"></i></div>
+            <span>90%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">CSS</h2>
+          </li>
+          <li class="skill">
+            <div class="skill__img"><i class="fab fa-js"></i></div>
+            <span>80%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">JAVASCRIPT</h2>
+          </li>
+          <li class="skill">
+            <div class="skill__img"><i class="fab fa-react"></i></div>
+            <span>70%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">REACT</h2>
+          </li>
+          <li class="skill">
+            <div class="skill__img"><i class="fab fa-node"></i></div>
+            <span>65%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">NODEJS</h2>
+          </li>
+          <li class="skill">
+            <div class="skill__img"><i class="fab fa-java"></i></div>
+            <span>60%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">JAVA</h2>
+          </li>
+          <li class="skill">
+            <div class="skill__img"><i class="fas fa-moon"></i></div>
+            <span>70%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">jQuery</h2>
+          </li>
+          <li class="skill">
+            <div class="skill__img"><i class="fab fa-python"></i></div>
+            <span>72%</span>
+            <div class="skill__level">
+              <div class="skill__value"></div>
+            </div>
+            <h2 class="skill__name">PYTHON</h2>
+          </li>
+        </ul>
+        <span class="skills__footer"> Put yourself on view. </span>
+      </div>
+    </section>
+    <section class="works" id="section">
+      <span class="projects__title">PROJECT</span>
+      <div class="projects__wrapper">
+        <a href="#" class="projects">
+          <img src="./images/preview.jpg" alt="" />
+          <div class="projects__description">
+            <span></span>
+          </div>
+        </a>
+        <a href="#" class="projects">
+          <img src="./images/preview.jpg" alt="" />
+          <div class="projects__description">
+            <span></span>
+          </div>
+        </a>
+        <a href="#" class="projects">
+          <img src="./images/preview.jpg" alt="" />
+          <div class="projects__description">
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="contact" id="section">
+      <span class="contact__title"> CONTACT </span>
+      <div class="contact__detail">
+        <p>For more MIYOUNG, why don't you contact here.</p>
+        <i class="far fa-id-card"></i>
+        <div class="contact__email">
+          <span>E-MAIL</span>
+          <input type="text" value="myjung93a@gmail.com" readonly />
+        </div>
+        <div class="contact__phone">
+          <span>PHONE-NUMBER</span>
+          <input type="text" value="010-3956-8377" readonly />
+        </div>
+      </div>
+      <img class="contact__icon" src="images/flower-icon.png" alt="" />
+    </section>
+    <!-- </section> -->
   </body>
 </html>
