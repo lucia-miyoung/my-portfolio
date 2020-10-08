@@ -11,6 +11,8 @@ navbarBtn.addEventListener("click", (event) => {
 const navbar = document.querySelector("#navbar");
 const about = document.querySelector(".about");
 const aboutRect = about.getBoundingClientRect().top - 4;
+const skillSection = document.querySelector(".skills").getBoundingClientRect()
+  .top;
 
 document.addEventListener("scroll", () => {
   if (window.scrollY > aboutRect) {
@@ -29,11 +31,27 @@ skillList.addEventListener("click", (e) => {
       ".skill__value"
     );
     skillValue.style.width = span.textContent;
+    skillValue.style.transition = "all 600ms ease-in";
+    span.style.transition = "all 600ms ease-in";
     span.classList.add("visible");
   }
 });
 
-// const skills = document.querySelector(".skills");
-// const skillsRect = skills.getBoundingClientRect();
+const skills = document.querySelector(".skills");
+const navClick = document.querySelector(".navbar__items");
 
-// function onIncreaseValue() {}
+navClick.addEventListener("click", (e) => {
+  const skillClick = e.target.textContent;
+  if (skillClick === "SKILLS") {
+    appearValue();
+  }
+});
+
+function appearValue() {
+  const spans = skillList.querySelectorAll("span");
+  const skillValues = document.querySelectorAll(".skill__value");
+  skillValues.forEach((value, index) => {
+    skillValues[index].style.width = spans[index].textContent;
+    spans[index].classList.add("visible");
+  });
+}
