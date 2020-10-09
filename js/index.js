@@ -1,11 +1,14 @@
 "use strict";
 
 const navbarBtn = document.querySelector(".navbar__items");
+const navClick = document.querySelector(".navbar__items");
+const skills = document.querySelector(".skills");
 
 navbarBtn.addEventListener("click", (event) => {
   const mark = event.target.textContent.toLowerCase();
   const findTarget = document.querySelector(`.${mark}`);
-  findTarget.scrollIntoView({ behavior: "smooth", block: "center" });
+  findTarget.scrollIntoView({ behavior: "smooth", block: "start" });
+  navClick.classList.remove("open");
 });
 
 const navbar = document.querySelector("#navbar");
@@ -37,9 +40,6 @@ skillList.addEventListener("click", (e) => {
   }
 });
 
-const skills = document.querySelector(".skills");
-const navClick = document.querySelector(".navbar__items");
-
 navClick.addEventListener("click", (e) => {
   const skillClick = e.target.textContent;
   if (skillClick === "SKILLS") {
@@ -55,3 +55,12 @@ function appearValue() {
     spans[index].classList.add("visible");
   });
 }
+
+/* toggle-button */
+
+const navToggle = document.querySelector(".navbar__toggle");
+/* navClick -> ul */
+
+navToggle.addEventListener("click", () => {
+  navClick.classList.toggle("open");
+});
