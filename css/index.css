@@ -600,6 +600,10 @@ a {
     --font-micro: 12px;
 }
 
+.section { 
+    padding: 20px;
+}
+
 .navbar__toggle {
     display:block;
 }
@@ -623,6 +627,7 @@ a {
 .home__title__mini {
     display:block;
     word-break: keep-all;
+    color:var(--color-light-white);
 }
 
 .about__wrapper {
