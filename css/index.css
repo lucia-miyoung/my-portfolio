@@ -485,14 +485,6 @@ a {
     user-select: none;
 }
 
-.projects__description span:nth-child(2) {
-    display: inline-block;
-    background-color: purple;
-    width: 50%; 
-    height: 2px;
-    margin:auto;
-}
-
 
 /* contact */
 .contact {
