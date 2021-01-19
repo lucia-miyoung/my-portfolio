@@ -595,6 +595,10 @@ a {
     padding: 20px;
 }
 
+.title {
+    letter-spacing: 5px;
+}
+
 .navbar__toggle {
     display:block;
 }
@@ -609,6 +613,10 @@ a {
 
 .navbar__items li:hover {
     background-color: var(--color-cream);
+}
+
+.home__image {
+    width: 100%;
 }
 
 .home__title {
@@ -663,6 +671,10 @@ a {
 .contact__icon i{
     font-size: 100px;
     transform: translate(150%, 150%) rotate(60deg);
+}
+
+.skills::after, .works::after, .works::before, .contact::after, .about::after {
+    display: none;
 }
 
 }
